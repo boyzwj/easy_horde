@@ -93,7 +93,12 @@ defmodule EasyHorde do
       @impl true
       def handle_cast(msg, state), do: state
 
-      defoverridable handle_terminate: 2, handle_init: 1, handle_info: 2, handle_call: 2
+      defoverridable handle_terminate: 2,
+                     handle_init: 1,
+                     handle_continue: 1,
+                     handle_info: 2,
+                     handle_call: 2,
+                     handle_cast: 2
     end
   end
 end

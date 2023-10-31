@@ -26,3 +26,4 @@ easy_horde-*.tar
 /tmp/
 
 .devcontainer
+.elixir_ls
